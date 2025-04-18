@@ -232,7 +232,9 @@
 .footer_section a {
   color: #fbfcfd;
 }
-
+.html{
+  scroll-behavior: smooth;
+}
 /* end footer section*/
 
 
@@ -255,14 +257,14 @@
         </div>
 
         <div class="nav-right">
-            <a class="a-element">Home</a>
-            <a class="a-element">Collection</a>
-            <a class="a-element">specials</a>
-            <a class="a-element">about us</a>
-            <a class="a-element">popular</a>
+            <a class="a-element" href="#home">Home</a>
+            <a class="a-element" href="#collection">Collection</a>
+            <!-- <a class="a-element" href="#specials">specials</a> -->
+            <a class="a-element" href="#popular">popular</a>
+            <a class="a-element" href="#about">about us</a>
         </div>
     </div>
-    <div class="mass-body">
+    <div  id="home" class="mass-body">
        <div class="contaier">
         <div class="row">
             <div id="carouselExampleCaptions" class="carousel slide">
@@ -296,7 +298,7 @@
                     <img src="https://t3.ftcdn.net/jpg/03/20/68/66/360_F_320686681_Ur6vdYQgDC9WiijiVfxlRyQffxOgfeFz.jpg" class="d-block w-100"  alt="...">
                     <div class="carousel-caption d-none d-md-block">
                       <h5 class="fs-1 text-center text-dark">Party Wears</h5>
-                      <p class="fs-1">In congue venenatis bibendum viverra sit augue elit sed viverra fames blandit.</p>
+                      <p class="fs-1 text-end">Step into elegance with our exclusive party collection, designed to make every occasion special..</p>
                       <button type="button" class="btn btn-dark rounded-pill">Shop The Collection..</button>
                     </div>
                   </div>
@@ -315,7 +317,7 @@
 
     </div>
     
-    <div class="home ">
+    <div  id="collection" class="home ">
       <div class="container-fluid">
           <div class="title text-center"> 
             <div class="p-2 mb-3 bg-danger-subtle text-emphasis-danger">
@@ -436,7 +438,7 @@
   </div>
 </div>
   <!---end blog--> 
-<div class="container">
+<div  id= "popular" class="container">
   <div class="row">
     <div class="simple" style="width: 20rem;  ">
       <img class="card-img-top " src="https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/l/p/z/l-line-1-fronlioz-original-imagqte7znjcz4nc.jpeg?q=70&crop=false" alt="Card image cap">
@@ -570,7 +572,7 @@
   </div>
 </section>
 <!-- info section -->
-<section class="info_section ">
+<section  id="about" class="info_section ">
   <div class="container">
     <div class="row">
       <div class="col-md-3">
