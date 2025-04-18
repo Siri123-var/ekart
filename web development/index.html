@@ -57,6 +57,186 @@
           .unchecked {
             font-size : 20px;
            }
+           .container{
+            margin-top: 20px;
+            margin-bottom: 20px;
+           }
+           .simple{
+            margin: 4px;
+            /* padding: 20px; */
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+           }
+           /* .container{
+            background-color: #a4c7ea;
+           } */
+           .home {
+             padding-left: 0;
+             padding-right: 0;
+             margin-left: 0;
+             margin-right: 0;
+              }
+              
+/* contact section */
+.contact_section {
+  .heading_container {
+    align-items: center;
+  }
+
+  .contact-form {
+    padding: 25px;
+    border-radius: 20px;
+
+    input {
+      border: none;
+      outline: none;
+      background-color: transparent;
+      width: 100%;
+      margin: 15px 0;
+      padding: 10px 20px;
+      border: 1px solid black;
+      border-radius: 30px;
+
+      &.input_message {
+        height: 175px;
+      }
+
+      &::placeholder {
+        color: #000;
+      }
+    }
+
+    button {
+      border: none;
+      outline: none;
+      padding: 12px 50px;
+      text-transform: uppercase;
+      margin-top: 25px;
+      background-color: #fec913;
+      color: #fff;
+      border-radius: 30px;
+    }
+
+  }
+
+  .map_img-box {
+    width: 80%;
+    margin: 25px auto 0 auto;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+.info_section {
+  background-color: #232323;
+  color: white;
+  padding: 90px 0 45px 0;
+}
+  h5 {
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+
+  .insta_container {
+      &>div {
+        display: flex;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .insta-box {
+        margin: 5px;
+        display: flex;
+        align-items: stretch;
+        background-color: white;
+        padding: 10px 20px;
+      }
+    }
+
+  .info_contact {
+    .img-box {
+      width: 35px;
+      display: flex;
+      justify-content: center;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    >div {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+
+      img {
+        height: auto;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  .info_form {
+    form {
+      input {
+        outline: none;
+        width: 100%;
+        padding: 7px 10px;
+      }
+
+      button {
+        /* @include hero-btn(#fbca47, $white, 8px, 30px); */
+        margin-top: 15px;
+        text-transform: uppercase;
+        font-size: 15px;
+      }
+    }
+
+    .social_box {
+      margin-top: 35px;
+      width: 100%;
+      display: flex;
+
+      a {
+        margin-right: 25px;
+      }
+    }
+  }
+  
+/* footer section*/
+.footer_section {
+  background-color: #232323;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_section p {
+  padding: 20px 65px;
+  color: #fbfcfd;
+  margin: 0 auto;
+  text-align: center;
+  border-top: 1px solid white;
+}
+
+.footer_section a {
+  color: #fbfcfd;
+}
+
+/* end footer section*/
+
+
+/* end contact section */
             
     </style>
 </head>
@@ -136,7 +316,7 @@
     </div>
     
     <div class="home ">
-      <div class="container  ">
+      <div class="container-fluid">
           <div class="title text-center"> 
             <div class="p-2 mb-3 bg-danger-subtle text-emphasis-danger">
               <h2 class="'position-relative d-inline-block p-3 border bg-light ">New Collection!!.. </h2>
@@ -155,10 +335,10 @@
       </div>
     </div>  
   <!-----women images-->
-  <div class="container">
+  <div class="containers">
       <div class="row">
-        <div class="col">
-          <div class="card h-50" style="width: 20rem;">
+        <div class="col-lg-3 col-md 4 col-sm-6 mb-4" >
+          <div class="card h-100" style="width: 100%;">
             <img src="https://ae01.alicdn.com/kf/Se86d68a507a64a6183fd92de7a4e2f41X/New-Elegant-Designer-Summer-Lapel-Tassel-Lace-Up-Dress-For-Women-Mesh-Flower-Embroidery-Short-Sleeve.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">RS.1000</h5>
@@ -167,8 +347,8 @@
             </div>
           </div>
         </div>
-        <div class="col"> 
-          <div class="card h-50" style="width: 20rem;">
+        <div class="col-lg-3 col-md 4 col-sm-6 mb-4"> 
+          <div class="card h-100" style="width: 100%;">
             <img src="https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/23322950/2023/5/22/e6589c62-264a-48a2-86d5-16e8c543c3261684741715065BAESDPinkFloralPrintGeorgetteFitFlareMidiDress1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">RS.1200</h5>
@@ -177,8 +357,8 @@
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-50" style="width: 20rem;">
+        <div class="col-lg-3 col-md 4 col-sm-6 mb-4">
+          <div class="card h-100" style="width: 100%;">
             <img src="https://www.alamodelabel.in/cdn/shop/files/4784B887-B1E2-4B21-9A3E-8CB4F6B39A6A_600x.jpg?v=1699370842" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">RS.1500</h5>
@@ -187,8 +367,8 @@
             </div>
           </div>
         </div>
-          <div class="col">
-           <div class="card h-50" style="width: 20rem;">
+          <div class="col-lg-3 col-md 4 col-sm-6 mb-4">
+           <div class="card h-100" style="width: 100%;">
             <img src="https://assets.ajio.com/medias/sys_master/root/20231006/DIPX/651ffc02ddf7791519259404/-473Wx593H-463928195-black-MODEL.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">RS.1000</h5>
@@ -197,8 +377,8 @@
             </div>
           </div>
         </div>
-      <div class="col">
-        <div class="card h-50" style="width: 20rem;">
+      <div class="col-lg-3 col-md 4 col-sm-6 mb-4">
+        <div class="card h-100" style="width: 100%;">
       <img src="https://i.ebayimg.com/images/g/K5YAAOSwxDBj9Iym/s-l1600.png" class="card-img-top" alt="...">
       <div class="card-body">
         <h5 class="card-title">RS.2000</h5>
@@ -207,8 +387,28 @@
        </div>
       </div>
      </div>
-    <div class="col">
-     <div class="card h-50" style="width: 20rem;">
+     <div class="col-lg-3 col-md 4 col-sm-6 mb-4">
+      <div class="card h-100" style="width: 100%;">
+    <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTJV8mo-lj2bscc3HSCaizhRuqUWLXTZEhv0EqGq88nXoTFHZji2Xq4PpFynRruGlBDqK-X0Jaw8NUfeAqWCJS2JrfvoQw951TTeHxVcjA" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">RS.2000</h5>
+      <p class="card-text">Office Lady Midi Dress Pleated Lapel V-neck Gradient color.</p>
+      <a href="#" class="btn btn-primary">Add to cart</a>
+     </div>
+    </div>
+   </div>
+   <div class="col-lg-3 col-md 4 col-sm-6 mb-4">
+    <div class="card h-100" style="width: 100%;">
+  <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTFM5HQhXSF7gM6xxCOLRCtJTxAl4-uchutx4MW0ANF-wTJzP3aGineBVVztEMsPAFPL6SsfB_k4b50rkf9aI6b0hcNHNPwZzAJ3iIQrIY" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">RS.2000</h5>
+    <p class="card-text">Office Lady Midi Dress Pleated Lapel V-neck Gradient color.</p>
+    <a href="#" class="btn btn-primary">Add to cart</a>
+   </div>
+  </div>
+ </div>
+    <div class="col-lg-3 col-md 4 col-sm-6 mb-4">
+     <div class="card h-100" style="width: 100%;">
      <img src="https://ae01.alicdn.com/kf/H00f3fc21903f4484a04a9fdcec481be90/High-end-Autumn-Women-s-Clothing-Flower-Embroidery-Mesh-Dress-Elegant-V-Neck-Lace-Long-Dresses.jpg" class="card-img-top" alt="...">
       <div class="card-body">
       <h5 class="card-title">RS.2300</h5>
@@ -216,19 +416,20 @@
       <a href="#" class="btn btn-primary">Add to cart</a>
       </div>
      </div>
+     
     </div>
   </div>
     </div>
   <!---end of women images-->
   <!-----blogs-->
-<div class="container">
-  <div class="card">
+<div class="container-fluid">
+  <div class="card" style="width: 100%;">
     <img src="https://t4.ftcdn.net/jpg/05/54/73/51/360_F_554735126_HvI4iAmEYCcJW2ZksUoXjlDkwpFc1wCp.jpg" class="card-img" alt="'demo">
     <div class="card-img-overlay w-200">
-      <div class="card-body text-dark">
+      <div class="card-body text-dark padding-top: 20px">
         <p class="card-title display-3  "> Discount Up to 40%</p>
         <p class="card-subtitle display-5 font-weight-dark "> Grand Sale Offer!</p>
-        <a href="#" class="btn btn-dark" role="button">Shop More</a>
+        <a href="#" class="btn btn-dark" style="margin-top: 20px;" role="button" >Shop More</a>
       </div>
     </div>
 
@@ -237,7 +438,7 @@
   <!---end blog--> 
 <div class="container">
   <div class="row">
-    <div class="card" style="width: 20rem;  ">
+    <div class="simple" style="width: 20rem;  ">
       <img class="card-img-top " src="https://rukminim2.flixcart.com/image/832/832/xif0q/shirt/l/p/z/l-line-1-fronlioz-original-imagqte7znjcz4nc.jpeg?q=70&crop=false" alt="Card image cap">
       <div class="card-body">
         <p class="card-text text-center fs-3 boldness">Grey Shirt</p>
@@ -247,7 +448,7 @@
         <button type="button" class="btn  btn-primary rounded-pill btn-warning  text-dark">Sale</button>
       </div>
     </div>
-    <div class="card" style="width: 20rem; ">
+    <div class="simple" style="width: 20rem; ">
       <img class="card-img-top " src="https://5.imimg.com/data5/SELLER/Default/2023/6/315330702/LR/VA/NF/59985749/14.jpg" alt="Card image cap">
       <div class="card-body">
         <p class="card-text">Print Crew Neck T-shirt .</p>
@@ -258,7 +459,7 @@
         <button type="button" class="btn  btn-primary rounded-pill btn-warning  text-dark">Sale</button>
       </div>
     </div>
-    <div class="card" style="width: 20rem;">
+    <div class="simple" style="width: 20rem;">
       <img class="card-img-top" src="https://5.imimg.com/data5/BW/ZN/GQ/SELLER-42542578/dt-040-500x500.jpg" alt="Card image cap">
       <div class="card-body">
         <p class="card-text">One-Shoulder Full Sleeve.</p>
@@ -271,7 +472,7 @@
         
       </div>
     </div>
-    <div class="card" style="width: 20rem;">
+    <div class="simple" style="width: 20rem;">
       <img class="card-img-top" src="https://images.meesho.com/images/products/125071583/2ecfz_512.jpg" alt="Card image cap">
       <div class="card-body">
         <p class="card-text">Women Printed Half Sleeve.</p>
@@ -281,7 +482,7 @@
         <button type="button" class="btn  btn-primary rounded-pill btn-warning  text-dark">Sale</button>
       </div>
     </div>
-    <div class="card" style="width: 20rem;  ">
+    <div class="simple" style="width: 20rem;  ">
       <img class="card-img-top " src="https://images.meesho.com/images/products/311205724/hjzxu_512.jpg" alt="Card image cap">
       <div class="card-body">
         <p class="card-text">Printed Half Sleeve.</p>
@@ -290,7 +491,7 @@
         <button type="button" class="btn  btn-primary rounded-pill btn-warning  text-dark">Sale</button>
       </div>
     </div>
-    <div class="card" style="width: 20rem;  ">
+    <div class="simple" style="width: 20rem;  ">
       <img class="card-img-top " src="https://images.meesho.com/images/products/167804443/s30oq_512.jpg" alt="Card image cap">
       <div class="card-body">
         <p class="card-text">Heart Printed.</p>
@@ -301,7 +502,7 @@
         <button type="button" class="btn  btn-primary rounded-pill btn-warning  text-dark">Sale</button>
       </div>
     </div>
-    <div class="card" style="width: 20rem;  ">
+    <div class="simple" style="width: 20rem;  ">
       <img class="card-img-top " src="https://images.meesho.com/images/products/169875140/pvyqi_512.webp" alt="Card image cap">
       <div class="card-body">
         <p class="card-text">Crop Top.</p>
@@ -311,7 +512,7 @@
         <button type="button" class="btn  btn-primary rounded-pill btn-warning  text-dark">Sale</button>
       </div>
     </div>
-    <div class="card" style="width: 20rem;  ">
+    <div class="simple" style="width: 20rem;  ">
       <img class="card-img-top " src="https://rukminim2.flixcart.com/image/400/450/xif0q/t-shirt/s/b/x/l-bajupatichutkimaroon-vk-fashion-original-imagka73y6gxgrjy.jpeg?q=90" alt="Card image cap">
       <div class="card-body">
         <p class="card-text">Printed Hoodie.</p>
@@ -326,107 +527,209 @@
   </div>
 </div>
 <!---news letter-->
-<section id="newsletter" class="py-5">
-  <div class="'container">
-    <div class="d-flex flex-coloum align-items-center justify-content-center">
-      <div class="title text-center pt-3 pb-5">
-        <h2 class="position-relative d-inline-block ms-4">
-          Newsletter Subscription
-        </h2>
-      </div>
-      <p class="text-center text-muted">Lorem ipsum dolor sit a-element
-        consecteutar adipiscing elit.possimus officia accusantium maiores quisquam dolorum
-      </p>
-      <div class="input-group mb-3 mt-3">
-        <input type="text" class="form-control" placeholder="Enter your Email....">
-        <button class="btn btn-primary" type="'submit">Subscribe</button>
+<section class="contact_section layout_padding">
+  <div class="container">
 
+    <div class="heading_container">
+      <h2>
+        Request A Call Back
+      </h2>
+    </div>
+    <div class="">
+      <div class="">
+        <div class="row">
+          <div class="col-md-9 mx-auto">
+            <div class="contact-form">
+              <form action="">
+                <div>
+                  <input type="text" placeholder="Full Name ">
+                </div>
+                <div>
+                  <input type="text" placeholder="Phone Number">
+                </div>
+                <div>
+                  <input type="email" placeholder="Email Address">
+                </div>
+                <div>
+                  <input type="text" placeholder="Message" class="input_message">
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn_on-hover">
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
-  
+    </div>
+    <div class="map_img-box">
+      <img src="images/map-img.png" alt="">
     </div>
   </div>
 </section>
-<!---end of newsletter-->
-<div class="endsec">
-  <div class="endsecp">
-    <div class="endleft">
-      <h2 class="heading">ATTIRE</h2>
-      <p class="parap">Lorem ipsum dolor sit amet consequtor adipiscing elit.nostrum 
-      mollitia quisquam veniam adit cupidiate,ullam out voluptas<br>
-      velit dolor ipsam?
-    </p>
-
-    </div>
-    <div class="end-mid">
-      <h2 >Links</h2>
-    <lists>
-      <ol>>HOME</ol>
-      <OL>>collection</OL>
-      <ol>>blogs</ol>
-      <ol>>about us</ol>
-
-    </lists>
-   </div>
-  </div>
-<div class="end">
-  <div class="col-md-6 col-lg-3">
-    <h5 class="fw-light mb-3">contact us</h5>
-    <div class="d-flex justify-content-start align-items-start my-2 text-muted"
-      ><span class="">
-        <i class="fas fa-map-marked-alt"></i>
-        </span>
-        <span class="fw-light">
-          Albert Street,Newyork,AS 756,United 
-           States of America.
-        </span>
-       </div>
-
-  </div>
-  <div class="d-flex justify-content-start align-items-start my-2 text-muted"
-      ><span class="">
-        <i class="fas fa-envelope"></i>
-        </span>
-        <span class="fw-light">
-          attire.support@gmail.com
-        </span>
-       </div>
-  <div class="d-flex justify-content-start align-items-start my-2 text-muted"
-      ><span class="">
-        <i class="fas fa-phone-alt"></i>
-        </span>
-        <span class="fw-light">
-          + 9786 9776 236
-        </span>
-       </div>
-       <div class="col-md-6 col-lg-3">
-        <h5 class="fw-light mb-3 fs-1 font-weight-dark">Follow Us</h5>
-        <div class="d-flex">
-          <ul class="list-unstyled d-flex"></ul>
-          <li>
-            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#" class="text-white text-decoration-none text-muted fs-4 me-4">
-              <i class="fab fa-pinterest"></i>
-            </a>
-          </li>
+<!-- info section -->
+<section class="info_section ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="info_contact">
+          <h5>
+            About Shop
+          </h5>
+          <div>
+            <div class="img-box">
+              <!-- <img src="fa-solid fa-location-dot" width="18px" alt=""> -->
+              <i class="fa-solid fa-location-dot" style="font-size: 18px; color: white;"></i>
+            </div>
+            <p>
+              Address
+            </p>
+          </div>
+          <div>
+            <div class="img-box">
+              <!-- <img src="images/telephone-white.png" width="12px" alt=""> -->
+              <i class="fa-solid fa-phone" style="font-size: 12px; color: white;"></i>
+            </div>
+            <p>
+              +01 1234567890
+            </p>
+          </div>
+          <div>
+            <div class="img-box">
+              <!-- <img src="images/envelope-white.png" width="18px" alt=""> -->
+              <i class="fa-solid fa-envelope" style="font-size: 18px; color: white;"></i>
+            </div>
+            <p>
+              attire@gmail.com
+            </p>
+          </div>
         </div>
-       </div>
-  </div>
-</div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_info">
+          <h5>
+            Informations
+          </h5>
+          <p>
+            Discover the latest trends in fashion and accessories. We offer high-quality products, exclusive collections, and exceptional customer service to enhance your shopping experience.
+          </p>
+        </div>
+      </div>
 
-</body>      
+      <div class="col-md-3">
+        <div class="info_insta">
+          <h5>
+            Instagram
+          </h5>
+          <div class="insta_container">
+            <div>
+              <a href="">
+                <div class="insta-box b-1">
+                  <i class="fa-solid fa-user" style="font-size: 24px; color: black;"></i>
+                </div>
+              </a>
+              <a href="">
+                <div class="insta-box b-2">
+                  <i class="fa-solid fa-user" style="font-size: 24px; color: black;"></i>
+                </div>
+              </a>
+            </div>
+
+            <div>
+              <a href="">
+                <div class="insta-box b-3">
+                  <i class="fa-solid fa-user" style="font-size: 24px; color: black;"></i>
+                </div>
+              </a>
+              <a href="">
+                <div class="insta-box b-4">
+                  <i class="fa-solid fa-user" style="font-size: 24px; color: black;"></i>
+                </div>
+              </a>
+            </div>
+            <div>
+              <a href="">
+                <div class="insta-box b-3">
+                  <i class="fa-solid fa-user" style="font-size: 24px; color: black;"></i>
+                </div>
+              </a>
+              <a href="">
+                <div class="insta-box b-4">
+                  <i class="fa-solid fa-user" style="font-size: 24px; color: black;"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_form ">
+          <h5>
+            Newsletter
+          </h5>
+          <form action="">
+            <input type="email" placeholder="Enter your email">
+            <button>
+              Subscribe
+            </button>
+          </form>
+          <div class="social_box">
+            <a href="">
+              <img src="images/fb.png" alt="">
+            </a>
+            <a href="">
+              <img src="images/twitter.png" alt="">
+            </a>
+            <a href="">
+              <img src="images/linkedin.png" alt="">
+            </a>
+            <a href="">
+              <img src="images/youtube.png" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- end info_section -->
+
+
+<!-- footer section -->
+<section class="container-fluid footer_section">
+  <p>
+    &copy; 2020 All Rights Reserved By
+    <a href="https://html.design/">Free Html Templates</a>
+  </p>
+</section>
+<!-- footer section -->
+
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</script>
+<!-- owl carousel script 
+  -->
+<script type="text/javascript">
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 0,
+    navText: [],
+    center: true,
+    autoplay: true,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      1000: {
+        items: 3
+      }
+    }
+  });
+</script>    
 </body>
 </html>
